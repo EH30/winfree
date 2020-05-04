@@ -1,5 +1,5 @@
 # winfree
-This progran Shows how windows slmgr.vbs can used to bypass windows activation      
+This progran Shows how windows slmgr.vbs can be used to bypass windows activation      
 
 
 This Program is for Educational purpose only   
