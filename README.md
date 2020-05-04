@@ -11,6 +11,8 @@ Created By: EH
    
 This Program should work before windows trial Time ends   
    
+Close All apps before running this as administrator
+   
 Run This Program As administrator   
    
 Select The windows Edition By Typing The Number   
