@@ -11,7 +11,23 @@ std::string keys[] = {
   "MRPKT-YTG23-K7D7T-X2JMM-QY7MG", "W82YF-2Q76Y-63HXB-FGJG9-GF7QX", "33PXH-7Y6KF-2VJC9-XBBR8-HVTHH",
   "YDRBP-3D83W-TY26F-D46B2-XCKRJ", "C29WB-22CC8-VJ326-GHFJW-H9DH4"
 };
-    
+
+
+std::string lowercase(std::string in){
+  std::string output = "";
+
+  for (int x=0; x< in.length(); x++){
+    if (int(in[x]) >= 65 && int(in[x]) <= 90){
+      output += char(int(in[x]+32));
+      continue;
+    }
+
+    output += in[x];
+  }
+
+  return output;
+}
+
 
 void menu(){
   std::cout << "1) Windows 10 Home" << std::endl;
@@ -49,27 +65,45 @@ void menu(){
 
 int main(int argc, char *argv[]){
     char command[100];
-    menu();
     int user_input;
+    bool askInput = true;
+    std::string reboot;
+
+    menu();
     std::cout << "Select You're Windows Edition: ";
     std::cin >> user_input;
     
     if (user_input-1 >= sizeof(keys)/sizeof(keys[0])){
-      std::cout << "Invalid Input" << std::endl;
+      std::cout << "[-]Invalid Input" << std::endl;
       system("pause");
       return 1;
     }
 
+    system("cls");
+
     std::string key = keys[user_input-1];
 
-    sprintf(command, "cscript slmgr.vbs /ipk %s", key.c_str());
+    sprintf(command, "slmgr.vbs /ipk %s", key.c_str());
 
     std::cout << "[+]Trying: " << key << std::endl;
     system(command);
-    system("cscript slmgr.vbs /skms kms.lotro.cc");
-    system("cscript slmgr.vbs /ato");
+    system("slmgr.vbs /skms kms.lotro.cc");
+    system("slmgr.vbs /ato");
 
+    while (askInput){
+      std::cout << "You're machine needs a Reboot Do you want to reboot now y/n: ";
+      std::getline(std::cin, reboot);
 
+      if (lowercase(reboot) == "y" || lowercase(reboot) == "n"){
+        askInput = false;
+      }
+
+    }
+
+    if (reboot == "y"){
+      system("shutdown /r /f");
+    }
+    
     system("pause");
     return 0;
 }
