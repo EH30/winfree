@@ -8,8 +8,6 @@ I wanted To Make a program and show how windows slmgr.vbs can used to bypass win
 
 Created By: EH   
 ------------------------------   
-
-This Version of winfree is Compiled with Visual Studio
    
 This Program should work before windows trial Time ends   
    
