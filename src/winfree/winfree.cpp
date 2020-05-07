@@ -2,7 +2,7 @@
 
 std::string keys[] = {
   "TX9XD-98N7V-6WMQ6-BX7FG-H8Q99", "W269N-WFGWX-YVC9B-4J6C9-T83GX", "MH37W-N47XK-V7XM9-C7227-GCQG9",
-  "NPPR9-FWDCX-D2C8J-H872K-2YT43", "DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4", "NW6C2-QMPVW-D7KKK-3GKT6-VCFB2",
+  "NPPR9-FWDCX-D2C8J-H872K-2YT43", "DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4", "NW6C2-QMPVW-D7KKK-3GKT6-VCFB2", 
   "2WH4N-8QGBV-H22JP-CT43Q-MDWWJ", "WNMTR-4C88C-JK8YV-HQ7T2-76DF9", "2F77B-TNFGY-69QQF-B8YKP-D69TJ",
   "DCPHK-NFMTC-H88MJ-PFHPY-QJ4BJ", "QFFDN-GRT3P-VKWWX-X7T3R-8B639", "TX9XD-98N7V-6WMQ6-BX7FG-H8Q99",
   "JK76T-CFG67-SDZ45-FYT76-BHJ78", "NJK78-FCT56-89UYH-SRE67-VHG67", "NJK89-TRY67-NM78Y-DRT67-HBJ78",
@@ -13,57 +13,57 @@ std::string keys[] = {
 };
 
 
-std::string lowercase(std::string in) {
-    std::string output = "";
+std::string lowercase(std::string in){
+  std::string output = "";
 
-    for (unsigned int x = 0; x < in.length(); x++) {
-        if (int(in[x]) >= 65 && int(in[x]) <= 90) {
-            output += char(int(in[x] + 32));
-            continue;
-        }
-
-        output += in[x];
+  for (int x=0; x< in.length(); x++){
+    if (int(in[x]) >= 65 && int(in[x]) <= 90){
+      output += char(int(in[x]+32));
+      continue;
     }
 
-    return output;
+    output += in[x];
+  }
+
+  return output;
 }
 
 
-void menu() {
-    std::cout << "1) Windows 10 Home" << std::endl;
-    std::cout << "2) Windows 10 Professional" << std::endl;
-    std::cout << "3) Windows 10 Professional N" << std::endl;
-    std::cout << "4) Windows 10 Enterprise" << std::endl;
-    std::cout << "5) Windows 10 Enterprise N" << std::endl;
-    std::cout << "6) Windows 10 Education" << std::endl;
-    std::cout << "7) Windows 10 Education N" << std::endl;
-    std::cout << "8) Windows 10 Enterprise 2015 LTSB" << std::endl;
-    std::cout << "9) Windows 10 Enterprise 2015 LTSB N" << std::endl;
-    std::cout << "10) Windows 10 Enterprise 2016 LTSB" << std::endl;
-    std::cout << "11) Windows 10 Enterprise 2016 LTSB N" << std::endl;
-    std::cout << "12) Windows 10 Core" << std::endl;
-    std::cout << "13) Windows 8.1 Professional" << std::endl;
-    std::cout << "14) Windows 8.1 Professional N" << std::endl;
-    std::cout << "15) Windows 8.1 Enterprise" << std::endl;
-    std::cout << "16) Windows 8.1 Enterprise N" << std::endl;
-    std::cout << "17) Windows 8 Professional" << std::endl;
-    std::cout << "18) Windows 8 Professional N" << std::endl;
-    std::cout << "19) Windows 8 Enterprise" << std::endl;
-    std::cout << "20) Windows 8 Enterprise N" << std::endl;
-    std::cout << "21) Windows 7 Professional" << std::endl;
-    std::cout << "22) Windows 7 Professional N" << std::endl;
-    std::cout << "23) Windows 7 Professional E" << std::endl;
-    std::cout << "24) Windows 7 Enterprise" << std::endl;
-    std::cout << "25) Windows 7 Enterprise N" << std::endl;
-    std::cout << "26) Windows 7 Enterprise E" << std::endl;
+void menu(){
+  std::cout << "1) Windows 10 Home" << std::endl;
+  std::cout << "2) Windows 10 Professional" << std::endl;
+  std::cout << "3) Windows 10 Professional N" << std::endl;
+  std::cout << "4) Windows 10 Enterprise" << std::endl;
+  std::cout << "5) Windows 10 Enterprise N" << std::endl;
+  std::cout << "6) Windows 10 Education" << std::endl;
+  std::cout << "7) Windows 10 Education N" << std::endl;
+  std::cout << "8) Windows 10 Enterprise 2015 LTSB" << std::endl;
+  std::cout << "9) Windows 10 Enterprise 2015 LTSB N" << std::endl;
+  std::cout << "10) Windows 10 Enterprise 2016 LTSB" << std::endl;
+  std::cout << "11) Windows 10 Enterprise 2016 LTSB N" << std::endl;
+  std::cout << "12) Windows 10 Core" << std::endl;
+  std::cout << "13) Windows 8.1 Professional" << std::endl;
+  std::cout << "14) Windows 8.1 Professional N" << std::endl;
+  std::cout << "15) Windows 8.1 Enterprise" << std::endl;
+  std::cout << "16) Windows 8.1 Enterprise N" << std::endl;
+  std::cout << "17) Windows 8 Professional" << std::endl;
+  std::cout << "18) Windows 8 Professional N" << std::endl;
+  std::cout << "19) Windows 8 Enterprise" << std::endl;
+  std::cout << "20) Windows 8 Enterprise N" << std::endl;
+  std::cout << "21) Windows 7 Professional" << std::endl;
+  std::cout << "22) Windows 7 Professional N" << std::endl;
+  std::cout << "23) Windows 7 Professional E" << std::endl;
+  std::cout << "24) Windows 7 Enterprise" << std::endl;
+  std::cout << "25) Windows 7 Enterprise N" << std::endl;
+  std::cout << "26) Windows 7 Enterprise E" << std::endl;
 
 
-    std::cout << "\n" << std::endl;
+  std::cout << "\n" << std::endl;
 
 }
 
 
-int main() {
+int main(int argc, char *argv[]){
     char command[100];
     int user_input;
     bool askInput = true;
@@ -72,38 +72,38 @@ int main() {
     menu();
     std::cout << "Select You're Windows Edition: ";
     std::cin >> user_input;
-
-    if (user_input - 1 >= sizeof(keys) / sizeof(keys[0])) {
-        std::cout << "[-]Invalid Input" << std::endl;
-        system("pause");
-        return 1;
+    
+    if (user_input-1 >= sizeof(keys)/sizeof(keys[0])){
+      std::cout << "[-]Invalid Input" << std::endl;
+      system("pause");
+      return 1;
     }
 
     system("cls");
 
-    std::string key = keys[user_input - 1];
+    std::string key = keys[user_input-1];
 
-    sprintf_s(command, "slmgr.vbs /ipk %s", key.c_str());
+    sprintf(command, "slmgr.vbs /ipk %s", key.c_str());
 
     std::cout << "[+]Trying: " << key << std::endl;
     system(command);
     system("slmgr.vbs /skms kms.lotro.cc");
     system("slmgr.vbs /ato");
 
-    while (askInput) {
-        std::cout << "You're machine needs a Reboot Do you want to reboot now y/n: ";
-        std::cin >> reboot;
+    while (askInput){
+      std::cout << "You're machine needs a Reboot Do you want to reboot now y/n: ";
+      std::getline(std::cin, reboot);
 
-        if (lowercase(reboot) == "y" || lowercase(reboot) == "n") {
-            askInput = false;
-        }
+      if (lowercase(reboot) == "y" || lowercase(reboot) == "n"){
+        askInput = false;
+      }
 
     }
 
-    if (reboot == "y") {
-        system("shutdown /r /f");
+    if (reboot == "y"){
+      system("shutdown /r /f");
     }
-
+    
     system("pause");
     return 0;
 }
