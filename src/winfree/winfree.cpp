@@ -92,7 +92,7 @@ int main(int argc, char *argv[]){
 
     while (askInput){
       std::cout << "You're machine needs a Reboot Do you want to reboot now y/n: ";
-      std::getline(std::cin, reboot);
+      std::cin >> reboot;
 
       if (lowercase(reboot) == "y" || lowercase(reboot) == "n"){
         askInput = false;
