@@ -1,7 +1,3 @@
-# winfree
-This progran Shows how windows slmgr.vbs can be used to bypass windows activation      
-
-
 This Program is for Educational purpose only   
 I wanted To Make a program and show how windows slmgr.vbs can used to bypass windows activation      
 ----------------------------------
@@ -10,8 +6,6 @@ Created By: EH
 ------------------------------   
    
 This Program should work before windows trial Time ends   
-   
-Close All apps before running this as administrator
    
 Run This Program As administrator   
    
