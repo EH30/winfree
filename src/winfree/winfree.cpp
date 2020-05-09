@@ -66,7 +66,6 @@ void menu(){
 int main(int argc, char *argv[]){
     char command[100];
     int user_input;
-    bool askInput = true;
     std::string reboot;
 
     menu();
@@ -90,12 +89,12 @@ int main(int argc, char *argv[]){
     system("slmgr.vbs /skms kms.lotro.cc");
     system("slmgr.vbs /ato");
 
-    while (askInput){
+    while (true){
       std::cout << "You're machine needs a Reboot Do you want to reboot now y/n: ";
       std::cin >> reboot;
 
       if (lowercase(reboot) == "y" || lowercase(reboot) == "n"){
-        askInput = false;
+        break;
       }
 
     }
