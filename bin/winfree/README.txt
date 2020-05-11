@@ -34,12 +34,6 @@ Example
 18) Windows 8 Professional N   
 19) Windows 8 Enterprise   
 20) Windows 8 Enterprise N   
-21) Windows 7 Professional   
-22) Windows 7 Professional N   
-23) Windows 7 Professional E   
-24) Windows 7 Enterprise   
-25) Windows 7 Enterprise N   
-26) Windows 7 Enterprise E   
    
    
 Select You're Windows Edition: 2   
