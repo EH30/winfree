@@ -7,9 +7,7 @@ std::string keys[] = {
   "DCPHK-NFMTC-H88MJ-PFHPY-QJ4BJ", "QFFDN-GRT3P-VKWWX-X7T3R-8B639", "TX9XD-98N7V-6WMQ6-BX7FG-H8Q99",
   "JK76T-CFG67-SDZ45-FYT76-BHJ78", "NJK78-FCT56-89UYH-SRE67-VHG67", "NJK89-TRY67-NM78Y-DRT67-HBJ78",
   "MLK89-TFY67-ESR56-NM78Y-YUG78", "KML89-ER67G-UHI89-MNU78-TY76Y", "MKL89-VGH67-ERS56-YU67G-OPUI7",
-  "NBM78-HBJ78-JH78T-BJH78-DRT56", "OK879-VGH67-JH67F-SD56D-YUFR7", "FJ82H-XT6CR-J8D7P-XQJJ2-GPDD4",
-  "MRPKT-YTG23-K7D7T-X2JMM-QY7MG", "W82YF-2Q76Y-63HXB-FGJG9-GF7QX", "33PXH-7Y6KF-2VJC9-XBBR8-HVTHH",
-  "YDRBP-3D83W-TY26F-D46B2-XCKRJ", "C29WB-22CC8-VJ326-GHFJW-H9DH4"
+  "NBM78-HBJ78-JH78T-BJH78-DRT56", "OK879-VGH67-JH67F-SD56D-YUFR7"
 };
 
 
@@ -50,14 +48,6 @@ void menu(){
   std::cout << "18) Windows 8 Professional N" << std::endl;
   std::cout << "19) Windows 8 Enterprise" << std::endl;
   std::cout << "20) Windows 8 Enterprise N" << std::endl;
-  std::cout << "21) Windows 7 Professional" << std::endl;
-  std::cout << "22) Windows 7 Professional N" << std::endl;
-  std::cout << "23) Windows 7 Professional E" << std::endl;
-  std::cout << "24) Windows 7 Enterprise" << std::endl;
-  std::cout << "25) Windows 7 Enterprise N" << std::endl;
-  std::cout << "26) Windows 7 Enterprise E" << std::endl;
-
-
   std::cout << "\n" << std::endl;
 
 }
